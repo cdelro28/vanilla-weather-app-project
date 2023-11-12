@@ -57,8 +57,10 @@ h1 {
   justify-content: end;
 }
 .weather-temp-icon {
-  font-size: 50px;
-  margin: auto 30px;
+  font-size: 60px;
+  margin: auto 10px;
+  position: relative;
+  top: 5px;
 }
 .weather-temp-value {
   font-size: 88px;
@@ -66,7 +68,9 @@ h1 {
 }
 .weather-temp-units {
   font-size: 20px;
-  margin-top: 40px;
+  margin: auto;
+  position: relative;
+  top: -15px;
 }
 
 footer {
