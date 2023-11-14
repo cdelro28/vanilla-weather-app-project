@@ -44,7 +44,7 @@ main {
   display: flex;
   justify-content: space-between;
   line-height: 1.5;
-  margin: 20px;
+  margin: 10px;
 }
 
 h1 {
@@ -71,6 +71,16 @@ h1 {
   margin: auto;
   position: relative;
   top: -15px;
+}
+
+.weather-forecast {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.forecast-icon {
+  font-size: 55px;
 }
 
 footer {
