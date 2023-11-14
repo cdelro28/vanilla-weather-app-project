@@ -46,6 +46,28 @@ function searchCity(city) {
   axios.get(apiUrl).then(updateWeatherData);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  forecastHtml = ``;
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+<div class="forecast-day">
+<div class="forecast-day">Tue</div>
+        <div class="forecast-icon">🌤</div>
+        <div>
+          <strong class="forecast-temp-max">10º</strong>
+          <span class="forecast-temp-min">| 2º </span>
+        </div>
+       </div>
+  `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 function applySearch(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#search-input");
@@ -55,3 +77,4 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", applySearch);
 
 searchCity("Seattle");
+displayForecast();
